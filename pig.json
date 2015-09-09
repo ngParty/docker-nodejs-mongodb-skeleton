@@ -1,0 +1,19 @@
+{
+    "db":{
+        "name": "my-project-mongo",
+        "image": "mongo",
+        "daemon": true
+    },
+
+    "myapp":{
+        "name": "my-project-app",
+        "image": "google/nodejs",
+        "command": [ "bash" ],
+        "links": [ "db" ],
+        "volumes": { ".": "/srv" },
+        "workdir": "/srv",
+        "ports": [
+          "5858:5858"
+        ]
+    }
+}

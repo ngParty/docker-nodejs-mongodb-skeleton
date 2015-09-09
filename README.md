@@ -1,2 +1,2 @@
-# docker-nodejs-mongodb-skeleton
+# docker nodejs mongodb skeleton
 Base for docker NodeJS development
